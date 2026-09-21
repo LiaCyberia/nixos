@@ -1,0 +1,32 @@
+{
+  pkgs,
+  lib,
+  ...
+}:
+{
+
+  services.displayManager.gdm.enable = true;
+
+  services.desktopManager.gnome.enable = lib.mkDefault true;
+
+  services.gnome.core-apps.enable = false;
+  services.gnome.core-developer-tools.enable = false;
+  services.gnome.games.enable = false;
+  services.gnome.localsearch.enable = false;
+
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-calendar
+    gnome-characters
+    gnome-clocks
+    gnome-connections
+    gnome-contacts
+    gnome-logs
+    gnome-maps
+    gnome-music
+    gnome-software
+    gnome-system-monitor
+    gnome-weather
+    gnome-tour
+    xterm
+    gnome-text-editor
+  ];
