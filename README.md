@@ -1,2 +1,2 @@
 # nixos
-primeiro repo de nix
+primeira repo de nix
