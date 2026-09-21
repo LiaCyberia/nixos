@@ -1,2 +1,2 @@
 # nixos
-primeira repo de nix
+config de niquis tbm sei lá bleh
